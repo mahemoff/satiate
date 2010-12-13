@@ -1,8 +1,121 @@
 <html>
-  <style>
-    html { text-align: center; }
-    img { width: 80%; max-height: 80%; margin: 5%% auto; }
-  </style>
-  <a href="http://www.flickr.com/photos/bochalla/460307409/sizes/l/in/photostream/"><img src="donut.jpg"></a>
-  <p>Mmmmm - Donuts</p>
+  <head>
+    <link rel="stylesheet" type="text/stylesheet" href="css/satiate.css"></link>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
+  </head>
+  <body>
+
+    <script src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.mustache.js"></script>
+    <script src="js/jquery.mobile-1.0a2.min.js"></script>
+
+    <div data-role="page" id="nav"> 
+      <div data-role="header"><h1>Satiate</h1></div> 
+      <div data-role="content">
+        <ul data-role="listview">
+          <li><a href="#donut">Donut</a></li>
+          <li><a href="#chocolate">Chocolate</a></li>
+          <li><a href="#jellycandy">Jelly Candy</a></li>
+          <li><a href="#sundae">Ice-Cream Sundae</a></li>
+          <li><a href="#burger">Burger</a></li>
+          <li><a href="#pizza">Pizza</a></li>
+        </ul>
+      </div> 
+      <div data-role="footer">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+    <div data-role="page" id="donut" data-fullscreen="true" class="photo">
+      <div data-role="header" data-position="fixed">
+        <h1>Donut</h1>
+      </div> 
+      <div class="photoZone"><img src="images/donut.jpg" /></div>
+      <div data-role="footer" data-position="fixed">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+    <div data-role="page" id="chocolate" data-fullscreen="true" class="photo">
+      <div data-role="header" data-position="fixed">
+        <h1>Chocolate</h1>
+      </div> 
+      <div class="photoZone"><img src="images/chocolate.jpg" /></div>
+      <div data-role="footer" data-position="fixed">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+    <div data-role="page" id="jellycandy" data-fullscreen="true" class="photo">
+      <div data-role="header" data-position="fixed">
+        <h1>Jelly Candy</h1>
+      </div> 
+      <div class="photoZone"><img src="images/jellycandy.jpg" /></div>
+      <div data-role="footer" data-position="fixed">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+    <div data-role="page" id="sundae" data-fullscreen="true" class="photo">
+      <div data-role="header" data-position="fixed">
+        <h1>Jelly Candy</h1>
+      </div> 
+      <div class="photoZone"><img src="images/sundae.jpg" /></div>
+      <div data-role="footer" data-position="fixed">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+    <div data-role="page" id="burger" data-fullscreen="true" class="photo">
+      <div data-role="header" data-position="fixed">
+        <h1>Burger</h1>
+      </div> 
+      <div class="photoZone"><img src="images/burger.jpg" /></div>
+      <div data-role="footer" data-position="fixed">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+    <div data-role="page" id="pizza" data-fullscreen="true" class="photo">
+      <div data-role="header" data-position="fixed">
+        <h1>Pizza</h1>
+      </div> 
+      <div class="photoZone"><img src="images/pizza.jpg" /></div>
+      <div data-role="footer" data-position="fixed">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+
+    <div data-role="page" id="about">
+      <div data-role="header"><h1>About Satiate</h1></div> 
+      <div data-role="content">
+
+        <div data-role="collapsible">
+          <h1>Satiate Your Appetite</h1>
+          <p>Satiate your appetite today, with Satiate. 97%* of credible scientists in lab coats have discovered visualising yummy food will make you less interested in eating it.</p>
+          <p style="font-size: small;">* may not be 97%</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true">
+          <h1>A Mobile HTML5 Experiment</h1>
+          <p>The real reason for this app is to explore mobile HTML5 development: jQuery Mobile, PhoneGap, and Apparat.io.</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true">
+          <h1>The Fine Print</h1>
+          <p>There is no warranty implied by this app. If you fail to lose weight using this app, you could try doing 12 star jumps instead.</p>
+          <p>(c) 2010 including some <a href="https://github.com/mahemoff/satiate/raw/master/README">CC reuse</a>.</p>
+        </div>
+
+      </div> 
+      <div data-role="footer">
+        <a href="#about">About Satiate</a>
+      </div> 
+    </div> 
+
+  <script id="foodTemplate" type="template">
+  </script>
+
+  </body>
 </html>
